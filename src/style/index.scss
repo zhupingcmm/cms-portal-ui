@@ -1,0 +1,121 @@
+html {
+  /** rem em*/
+  /**em 相对于父元素的font-size*/
+  /**rem 相对于根元素html的font-size r 就是root的意思*/
+  /** 各大厂商font-size默认值是16px*/
+  /**16px * 62.5% =10px*/
+  /** 1rem = 10px*/
+  font-size: 62.5%;
+}
+html body #root {
+  width: 100vw;
+  height: 100vh;
+  // display: flex;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  .shadowCard {
+    width: 40rem;
+    min-height: 56rem;
+    padding: 3.2rem 4rem;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    text-align: center;
+    .login-title {
+      margin-bottom: 2.4rem;
+    }
+  }
+}
+
+.full-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.users-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.4rem 2.4rem 0 2.4rem;
+  .select-search {
+    width: 24rem;
+    margin-bottom: 2.4rem;
+  }
+  .user-select {
+    display: flex;
+    flex-direction: row;
+    margin: 8rem 0;
+    justify-content: center;
+  }
+  .user-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.full-button {
+  width: 100%;
+}
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-model {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.kanban {
+  display: flex;
+  // overflow: scroll;
+  flex: 1;
+  .kanban-colum {
+    min-width: 27rem;
+    border-radius: 6px;
+    background-color: rgb(244, 245, 247);
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0.7rem 1rem;
+    margin-right: 1.5rem;
+    .kanban-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.user-info-container {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  height: calc(95vh);
+  .aside {
+    background-color: rgb(244, 245, 247);
+    display: flex;
+  }
+}
