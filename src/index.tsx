@@ -1,9 +1,7 @@
 import { render } from "react-dom";
 
 const App = () => {
-  return <div>abc
-    f
-  </div>;
+  return <div>abc</div>;
 };
 
 render(<App />, document.getElementById("root"));
