@@ -1,7 +1,7 @@
 const path = require("path");
 const WebpackCleanPlugin = require("webpack-clean-plugin");
 const CleanWebpackTerminalPlugin = require("clean-terminal-webpack-plugin");
-// const ProgressBarPlugin = require("webpackbar");
+const ProgressBarPlugin = require("webpackbar");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -14,7 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "../../dist"),
     clean: true,
   },
-  stats: "errors-warnings",
+  // stats: "errors-warnings",
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".js", ".jsx", ".json"],
     preferRelative: true,
@@ -58,8 +58,8 @@ module.exports = {
   },
   plugins: [
     new WebpackCleanPlugin(),
-    new CleanWebpackTerminalPlugin(),
-    // new ProgressBarPlugin(),
+    // new CleanWebpackTerminalPlugin(),
+    new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../../src/index.html"),
       hash: false,

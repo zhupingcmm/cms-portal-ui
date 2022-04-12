@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Button, Card, Form, Input, Divider, Typography } from "antd";
+import React, { useState } from "react";
+import { Button, Card, Divider } from "antd";
 import { Register } from "./register";
 import { Login } from "./login";
 const UnauthenticatedApp = () => {
