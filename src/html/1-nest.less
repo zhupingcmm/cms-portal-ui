@@ -1,0 +1,31 @@
+@import "./2-nest.less";
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.block(@fontSize){
+    font-size: @fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.box{
+    font-size: @fontSize;
+    border: 1px solid red;
+}
+
+.wrapper{
+    background: lighten(@bgColor, 40%);
+    .nav{
+        .block(@fontSize);
+        &:extend(.box);
+    }
+    .content{
+        .block(@fontSize + 1);
+        &:hover{
+            background: @bgColor;
+        }
+    }
+}

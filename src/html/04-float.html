@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: red;
+        width: 400px;
+        margin: 20px;
+    }
+    .p1 {
+        background: green;
+        float: left;
+        width: 200px;
+        height: 50px;
+    }
+    .container2::after {
+        content: '';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+
+    }
+</style>
+<body>
+    <div class="container ">
+        <span class="p1">float</span>
+        <div>
+            hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e  hhe eheh ehe ehe ehe ehe e 
+        </div>
+    </div>
+    <div class="container container2">
+        <span>abc</span>
+        <span class="p1">float</span>
+        <span class="p1">float</span>
+    </div>
+    <div class="container" style="height: 200px; background: blue;">
+        hhh
+    </div>
+</body>
+</html>

@@ -24,3 +24,9 @@ ID 选择器 #id{} +100
 斜体 font-style: itatic
 下划线: text-decoration
 指针: cursor
+
+效果属性
+box-shadow
+text-shadow
+border-radius
+background
